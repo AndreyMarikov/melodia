@@ -53,10 +53,7 @@ const router = createHashRouter([
   {
     path: '*',
     element: <NotFoundPage />
-  },
-  {
-    basename: '/melodia',
-  },
+  }
 ])
 
 createRoot(document.getElementById('root')).render(
