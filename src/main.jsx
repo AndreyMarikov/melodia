@@ -1,7 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Home from './components/Home';
 import ModeSelectionPage from './components/ModeSelectionPage';
 import NoteNotationSelectionPage from './components/NoteNotationSelectionPage';
@@ -13,7 +13,7 @@ import SmallOctavePage from './components/SmallOctavePage';
 import OneLineOctavePage from './components/OneLineOctavePage';
 import TwoLineOctavePage from './components/TwoLineOctavePage';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <Home />,
